@@ -61,4 +61,5 @@ console.log(person2) // -> {firstName: 'Petra', lastName: 'Solano', married: fal
 
 * For `getFullName`, don't set a `fullName` property on the given object. Just give the caller of the function back a new value based on the first name and last name. (You were probably going to do it that way anyway!)
 * For `giveBirthday`, you'll need to have some way to tell if the key `age` is already in the given person. Do a little research!
+* For `marry`, you can re-use your `getFullName` function in order to get each person's `spouseName`. Just pass in the person whose `fullName` you want, and you'll get back your new `spouseName` property.
 * Same as above for `divorce`; you'll need to research a way to REMOVE the key `spouseName` from the given people. Simply setting the properties to `undefined` or `null` won't be sufficient; they need to be as if they were never there. (Creepy!)
