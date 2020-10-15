@@ -4,7 +4,7 @@
 
 Functions and objects together? Is this the endtimes?
 
-What we're doing today is writing function that can manipulate the object passed in. We'll be using mutation, which is, again, bad practice. But we'll learn good practice soon enough, and it's pretty important that we understand JS's abilities so that we understand which to use, when, and why. When we have a bug because we mutated an object passed in, we won't be able to find it without understanding mutation!
+What we're doing today is writing functions that can manipulate the object passed in. We'll be using mutation, which is, again, bad practice. But we'll learn good practice soon enough, and it's pretty important that we understand JavaScript's abilities so that we understand which to use, when, and why. When we have a bug because we mutated an object passed in, we won't be able to find it without understanding mutation!
 
 For now: mutate away!
 
@@ -28,15 +28,15 @@ For now: mutate away!
   * `getFullName({firstName: 'Colin', lastName: 'Jaffe'}) // -> 'Jaffe'`
   * `getFullName({firstName: 'Petra', lastName: 'Solano'}) // -> 'Petra'`
 * `setFirstName` - changes the value of the firstName property of the given person object to the given value
-  * `setFirstName({firstName: 'Colin', lastName: 'Jaffe'}, 'Redacted') // -> {firstName: 'Redacted', lastName: 'Jaffe'}
-  * `setFirstName({firstName: 'Petra', lastName: 'Solano'}, 'Anthony') // -> {firstName: 'Anthony', lastName: 'Solano'}
+  * `setFirstName({firstName: 'Colin', lastName: 'Jaffe'}, 'Redacted') // -> {firstName: 'Redacted', lastName: 'Jaffe'}`
+  * `setFirstName({firstName: 'Petra', lastName: 'Solano'}, 'Anthony') // -> {firstName: 'Anthony', lastName: 'Solano'}`
 * `setAge` - changes the value of the age property of the given person object to the given value
-  * `setAge({firstName: 'Colin', lastName: 'Jaffe', age: 39}, 45) // -> {firstName: 'Colin', lastName: 'Jaffe', age: 45}
-  * `setAge({firstName: 'Petra', lastName: 'Solano', age: 29}, 35) // -> {firstName: 'Petra', lastName: 'Solano', age: 35}
+  * `setAge({firstName: 'Colin', lastName: 'Jaffe', age: 39}, 45) // -> {firstName: 'Colin', lastName: 'Jaffe', age: 45}`
+  * `setAge({firstName: 'Petra', lastName: 'Solano', age: 29}, 35) // -> {firstName: 'Petra', lastName: 'Solano', age: 35}`
 * `giveBirthday` - increments by 1 the age property of the given person object, or gives them an age of 1 if they don't have that property
-  * `giveBirthday({firstName: 'Colin', lastName: 'Jaffe', age: 39}) // -> {firstName: 'Colin', lastName: 'Jaffe', age: 40}
-  * `giveBirthday({firstName: 'Petra', lastName: 'Solano', age: 29}) // -> {firstName: 'Solano', lastName: 'Solano', age: 30}
-  * `giveBirthday({firstName: 'Baby', lastName: 'Jaffe'}) // -> {firstName: 'Baby', lastName: 'Jaffe', age: 1}
+  * `giveBirthday({firstName: 'Colin', lastName: 'Jaffe', age: 39}) // -> {firstName: 'Colin', lastName: 'Jaffe', age: 40}`
+  * `giveBirthday({firstName: 'Petra', lastName: 'Solano', age: 29}) // -> {firstName: 'Solano', lastName: 'Solano', age: 30}`
+  * `giveBirthday({firstName: 'Baby', lastName: 'Jaffe'}) // -> {firstName: 'Baby', lastName: 'Jaffe', age: 1}`
 * `marry` - sets the marital status of both given people to `true` and sets each person's `spouseName` property to be the full name of the other
 
 ```javascript
