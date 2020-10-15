@@ -51,7 +51,7 @@ console.log(person2) // -> {firstName: 'Petra', lastName: 'Solano', married: tru
 ```javascript
 const person1 = {firstName: 'Colin', lastName: 'Jaffe', married: true, spouseName: 'Petra Solano'}
 const person2 = {firstName: 'Petra', lastName: 'Solano', married: true, spouseName: 'Colin Jaffe'}
-marry(person1, person2);
+divorce(person1, person2);
 console.log(person1) // -> {firstName: 'Colin', lastName: 'Jaffe', married: false} 
 console.log(person2) // -> {firstName: 'Petra', lastName: 'Solano', married: false}
 ```
