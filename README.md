@@ -49,9 +49,9 @@ console.log(person2) // -> {firstName: 'Petra', lastName: 'Solano', married: tru
 
 * `divorce` - changes the marital status to `false` and removes the `spouseName` property from both given people
 ```javascript
-marry(person1, person2)
 const person1 = {firstName: 'Colin', lastName: 'Jaffe', married: true, spouseName: 'Petra Solano'}
 const person2 = {firstName: 'Petra', lastName: 'Solano', married: true, spouseName: 'Colin Jaffe'}
+marry(person1, person2);
 console.log(person1) // -> {firstName: 'Colin', lastName: 'Jaffe', married: false} 
 console.log(person2) // -> {firstName: 'Petra', lastName: 'Solano', married: false}
 ```
