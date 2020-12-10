@@ -70,7 +70,7 @@ describe('getFullName', () => {
       age: 29,
       married: false,
     };
-    
+
     expect(getFullName(person1)).toBe('Colin Jaffe')
     expect(getFullName(person2)).toBe('Petra Solano')
   })
@@ -180,7 +180,8 @@ describe('marry', () => {
     };
 
     marry(person1, person2);
-    expect(person1.married === true && person2.married === true).toBe(true);
+    expect(person1.married).toBe(true);
+    expect(person2.married).toBe(true);
   })
 
   it(`sets the spouse of each given person to be the full name of the other`, () => {
@@ -257,10 +258,12 @@ describe('divorce', () => {
     };
 
     divorce(person1, person2);
-    expect(person1.married === false && person2.married === false).toBe(true);
+    expect(person1.married).toBe(false);
+    expect(person2.married).toBe(false);
 
     divorce(person3, person4);
-    expect(person3.married === false && person4.married === false).toBe(true);
+    expect(person3.married).toBe(false);
+    expect(person4.married).toBe(false);
   })
 
   it(`removes the spouseName property entirely from both people`, () => {
