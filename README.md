@@ -25,8 +25,8 @@ For now: mutate away!
   * `getLastName({firstName: 'Colin', lastName: 'Jaffe'}) // -> 'Jaffe'`
   * `getLastName({firstName: 'Petra', lastName: 'Solano'}) // -> 'Petra'`
 * `getFullName` - returns the value of the firstName property plus the lastName property with a space in the middle for the given person object
-  * `getFullName({firstName: 'Colin', lastName: 'Jaffe'}) // -> 'Jaffe'`
-  * `getFullName({firstName: 'Petra', lastName: 'Solano'}) // -> 'Petra'`
+  * `getFullName({firstName: 'Colin', lastName: 'Jaffe'}) // -> 'Colin Jaffe'`
+  * `getFullName({firstName: 'Petra', lastName: 'Solano'}) // -> 'Petra Solano'`
 * `setFirstName` - changes the value of the firstName property of the given person object to the given value
   * `setFirstName({firstName: 'Colin', lastName: 'Jaffe'}, 'Redacted') // -> {firstName: 'Redacted', lastName: 'Jaffe'}`
   * `setFirstName({firstName: 'Petra', lastName: 'Solano'}, 'Anthony') // -> {firstName: 'Anthony', lastName: 'Solano'}`
