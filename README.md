@@ -11,9 +11,10 @@ For now: mutate away!
 
 ### Setup
 
-* Fork.
-* Clone.
-* `jest --watch-all`
+* Fork
+* Clone
+* Install dependencies with `npm install`
+* Run the tests with `npm run test`
 
 
 ### Tasks
