@@ -1,17 +1,15 @@
 # Objectively Funcy
 
-### Introduction
-
 What we're doing today is writing functions that can manipulate the object passed in.
 
-### Setup
+## Setup
 
 * Fork
 * Clone
 * Install dependencies with `npm install`
 * Run the tests with `npm run test`
 
-### Tasks
+## Tasks
 
 * `getFirstName` - returns the value of the firstName property of the given person object
   * `getFirstName({firstName: 'Colin', lastName: 'Jaffe'}) // -> 'Colin'`
@@ -57,7 +55,7 @@ console.log(person1) // -> {firstName: 'Colin', lastName: 'Jaffe', married: fals
 console.log(person2) // -> {firstName: 'Petra', lastName: 'Solano', married: false}
 ```
 
-### Tips
+## Tips
 
 * For `getFullName`, don't set a `fullName` property on the given object. Just give the caller of the function back a new value based on the first name and last name
 * For `giveBirthday`, you'll need to have some way to tell if the key `age` is already in the given person
